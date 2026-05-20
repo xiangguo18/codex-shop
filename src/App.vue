@@ -17,6 +17,7 @@ const dishes = [
   {
     tag: "炭火",
     title: "桂花蜜汁炭烤排骨",
+    price: "¥128",
     copy: "低温慢烤后上炭炉收香，入口带轻微焦糖与桂花尾韵。",
     image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=84",
     alt: "炭烤肉类主菜",
@@ -24,6 +25,7 @@ const dishes = [
   {
     tag: "时令",
     title: "莼菜蟹粉豆腐羹",
+    price: "¥78",
     copy: "蟹粉鲜甜、豆腐细滑，适合从第一口开始安静下来。",
     image: "https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=900&q=84",
     alt: "精致海鲜料理",
@@ -31,6 +33,7 @@ const dishes = [
   {
     tag: "甜点",
     title: "龙井奶冻与青梅露",
+    price: "¥46",
     copy: "茶香、奶香与青梅酸度平衡，给晚餐一个干净收束。",
     image: "https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=900&q=84",
     alt: "摆盘精致的甜点",
@@ -144,7 +147,10 @@ onBeforeUnmount(() => {
           <img :src="dish.image" :alt="dish.alt" />
           <div>
             <span>{{ dish.tag }}</span>
-            <h3>{{ dish.title }}</h3>
+            <div class="dish-title-row">
+              <h3>{{ dish.title }}</h3>
+              <strong>{{ dish.price }}</strong>
+            </div>
             <p>{{ dish.copy }}</p>
           </div>
         </article>
