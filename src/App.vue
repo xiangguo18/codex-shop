@@ -16,24 +16,24 @@ const today = computed(() => new Date().toISOString().slice(0, 10));
 const dishes = [
   {
     tag: "炭火",
-    title: "桂花蜜汁炭烤排骨",
-    copy: "低温慢烤后上炭炉收香，入口带轻微焦糖与桂花尾韵。",
+    title: "迷迭香炭烤肉眼牛排",
+    copy: "厚切肉眼以炭火封边，搭配香草黄油与烤蔬菜，肉汁丰盈。",
     image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=84",
-    alt: "炭烤肉类主菜",
+    alt: "炭烤牛排主菜",
   },
   {
-    tag: "时令",
-    title: "莼菜蟹粉豆腐羹",
-    copy: "蟹粉鲜甜、豆腐细滑，适合从第一口开始安静下来。",
+    tag: "酥炸",
+    title: "蜂蜜辣酱脆皮炸鸡",
+    copy: "外皮炸到金黄酥脆，刷上微甜辣酱，适合趁热分享。",
     image: "https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=900&q=84",
-    alt: "精致海鲜料理",
+    alt: "盘中的酥脆炸鸡",
   },
   {
-    tag: "甜点",
-    title: "龙井奶冻与青梅露",
-    copy: "茶香、奶香与青梅酸度平衡，给晚餐一个干净收束。",
+    tag: "海鲜",
+    title: "蒜香黄油烤龙虾",
+    copy: "龙虾肉烤至弹嫩，淋上蒜香黄油汁，配清爽蔬菜收住鲜甜。",
     image: "https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=900&q=84",
-    alt: "摆盘精致的甜点",
+    alt: "摆盘精致的龙虾海鲜主菜",
   },
 ];
 
